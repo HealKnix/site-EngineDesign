@@ -28,6 +28,22 @@ section {
 	overflow: hidden;
 }
 
+button {
+	width: 200px;
+	height: 40px;
+	font-family: 'Ubuntu Medium';
+	border-radius: 100px;
+	-webkit-border-radius: 100px;
+	-moz-border-radius: 100px;
+	-ms-border-radius: 100px;
+	-o-border-radius: 100px;
+	transition: 0.3s ease-in-out;
+	-webkit-transition: 0.3s ease-in-out;
+	-moz-transition: 0.3s ease-in-out;
+	-ms-transition: 0.3s ease-in-out;
+	-o-transition: 0.3s ease-in-out;
+}
+
 .back_up {
 	padding: 0;
 	position: fixed;
@@ -104,23 +120,10 @@ header > ul > a > li:hover::after {
 }
 
 section:nth-child(1) > header > .bt_download {
-	width: 200px;
-	height: 40px;
 	margin: auto 30px;
 	border: none;
-	font-family: 'Ubuntu';
 	color: #fafafa;
 	background-color: var(--black_df);
-	border-radius: 100px;
-	-webkit-border-radius: 100px;
-	-moz-border-radius: 100px;
-	-ms-border-radius: 100px;
-	-o-border-radius: 100px;
-	transition: 0.3s ease-in-out;
-	-webkit-transition: 0.3s ease-in-out;
-	-moz-transition: 0.3s ease-in-out;
-	-ms-transition: 0.3s ease-in-out;
-	-o-transition: 0.3s ease-in-out;
 }
 section:nth-child(1) > header > .bt_download:hover {
 	background-color: var(--black_df_hover);
@@ -215,22 +218,9 @@ section:nth-child(2) > hero > div > button {
 }
 
 section:nth-child(2) > hero > div > .bt_download {
-	width: 200px;
-	height: 40px;
 	border: none;
-	font-family: 'Ubuntu';
 	color: #fafafa;
 	background-color: #5a00d2;
-	border-radius: 100px;
-	-webkit-border-radius: 100px;
-	-moz-border-radius: 100px;
-	-ms-border-radius: 100px;
-	-o-border-radius: 100px;
-	transition: 0.3s ease-in-out;
-	-webkit-transition: 0.3s ease-in-out;
-	-moz-transition: 0.3s ease-in-out;
-	-ms-transition: 0.3s ease-in-out;
-	-o-transition: 0.3s ease-in-out;
 }
 section:nth-child(2) > hero > div > .bt_download:hover {
 	background-color: #882cff;
@@ -238,23 +228,10 @@ section:nth-child(2) > hero > div > .bt_download:hover {
 }
 
 section:nth-child(2) > hero > div > .bt_feedback {
-	width: 200px;
-	height: 40px;
 	border: none;
-	font-family: 'Ubuntu';
 	color: #fafafa;
 	background-color: transparent;
 	border: 1px solid var(--white_df);
-	border-radius: 100px;
-	-webkit-border-radius: 100px;
-	-moz-border-radius: 100px;
-	-ms-border-radius: 100px;
-	-o-border-radius: 100px;
-	transition: 0.3s ease-in-out;
-	-webkit-transition: 0.3s ease-in-out;
-	-moz-transition: 0.3s ease-in-out;
-	-ms-transition: 0.3s ease-in-out;
-	-o-transition: 0.3s ease-in-out;
 }
 section:nth-child(2) > hero > div > .bt_feedback:hover {
 	background-color: var(--white_df);
@@ -344,4 +321,57 @@ section:nth-child(2) > hero > div > .bt_feedback:hover {
 
 .active-control {
 	background-color: #666;
+}
+
+@media (max-width: 1000px) {
+	section:nth-child(2) > hero > .head,
+	section:nth-child(1) > hero > .head {
+		font-size: calc(var(--index) * 1.5);
+	}
+
+	section:nth-child(1) > hero > .tail,
+	section:nth-child(2) > hero > .tail,
+	section:nth-child(2) > hero > .tail > a {
+		font-size: calc(var(--index) * 0.8);
+	}
+}
+
+@media (max-width: 800px) {
+	section:nth-child(2) > hero > .head,
+	section:nth-child(1) > hero > .head {
+		font-size: calc(var(--index) * 2);
+	}
+
+	section:nth-child(1) > hero > .tail,
+	section:nth-child(2) > hero > .tail,
+	section:nth-child(2) > hero > .tail > a {
+		font-size: calc(var(--index) * 1);
+	}
+}
+
+@media (max-width: 600px) {
+	header > ul > a > li {
+		position: relative;
+		height: auto;
+		float: left;
+		display: flex;
+		align-items: center;
+		padding: 5px 0;
+		margin: 5px 20px;
+	}
+
+	header {
+		height: auto;
+	}
+
+	section:nth-child(2) > hero > .head,
+	section:nth-child(1) > hero > .head {
+		font-size: calc(var(--index) * 2.5);
+	}
+
+	section:nth-child(1) > hero > .tail,
+	section:nth-child(2) > hero > .tail,
+	section:nth-child(2) > hero > .tail > a {
+		font-size: calc(var(--index) * 1.2);
+	}
 }
