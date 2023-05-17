@@ -184,6 +184,7 @@ section:nth-child(1) > hero > .tail {
 /* ========= Hero Section 2 ========= */
 
 section:nth-child(2) > hero {
+	height: 100vh;
 	color: var(--white_df);
 	position: relative;
 	display: flex;
@@ -233,19 +234,25 @@ section:nth-child(2) > hero > div > .bt_feedback {
 	background-color: transparent;
 	border: 1px solid var(--white_df);
 }
+
 section:nth-child(2) > hero > div > .bt_feedback:hover {
 	background-color: var(--white_df);
 	color: var(--black_df);
 	cursor: pointer;
 }
 
+section:nth-child(2) > hero > div {
+	margin-bottom: 35px;
+}
+
 /* ========= Slider Section 2 ========= */
 
 .slider-container {
+	flex: auto;
 	position: relative;
-	min-width: 1100px;
-	height: 400px;
-	margin: 30px auto;
+	width: 100%;
+	height: 200px;
+	margin: auto;
 	overflow: hidden;
 }
 
@@ -253,10 +260,14 @@ section:nth-child(2) > hero > div > .bt_feedback:hover {
 	position: absolute;
 	left: 50%;
 	top: 50%;
-	transform: translate(-50%, -50%);
 	display: flex;
 	width: 300%;
 	height: 100%;
+	transform: translate(-50%, -50%);
+	-webkit-transform: translate(-50%, -50%);
+	-moz-transform: translate(-50%, -50%);
+	-ms-transform: translate(-50%, -50%);
+	-o-transform: translate(-50%, -50%);
 }
 
 .slide {
@@ -281,8 +292,12 @@ section:nth-child(2) > hero > div > .bt_feedback:hover {
 	position: absolute;
 	bottom: 20px;
 	left: 50%;
-	transform: translateX(-50%);
 	display: flex;
+	transform: translateX(-50%);
+	-webkit-transform: translateX(-50%);
+	-moz-transform: translateX(-50%);
+	-ms-transform: translateX(-50%);
+	-o-transform: translateX(-50%);
 }
 
 .slider-control {
@@ -293,6 +308,10 @@ section:nth-child(2) > hero > div > .bt_feedback:hover {
 	margin-right: 10px;
 	cursor: pointer;
 	transition: background-color 0.5s ease-in-out;
+	-webkit-transition: background-color 0.5s ease-in-out;
+	-moz-transition: background-color 0.5s ease-in-out;
+	-ms-transition: background-color 0.5s ease-in-out;
+	-o-transition: background-color 0.5s ease-in-out;
 }
 
 .slider-control:last-child {
@@ -301,6 +320,10 @@ section:nth-child(2) > hero > div > .bt_feedback:hover {
 
 .active-slide {
 	transform: translateX(0);
+	-webkit-transform: translateX(0);
+	-moz-transform: translateX(0);
+	-ms-transform: translateX(0);
+	-o-transform: translateX(0);
 }
 
 .prev-slide {
@@ -374,6 +397,14 @@ section:nth-child(2) > hero > div > .bt_feedback:hover {
 	section:nth-child(2) > hero > .tail > a {
 		font-size: calc(var(--index) * 1.2);
 	}
+
+	.slider-container {
+		height: 250px;
+	}
+
+	section:nth-child(2) > hero > div {
+		margin-bottom: 25px;
+	}
 }
 
 @media (max-width: 525px) {
@@ -385,5 +416,27 @@ section:nth-child(2) > hero > div > .bt_feedback:hover {
 	.bt_feedback {
 		width: 100%;
 		margin: 0 auto;
+	}
+
+	section:nth-child(2) > hero > div {
+		margin-bottom: 10px;
+	}
+}
+
+@media (max-width: 375px) {
+	.slider-container {
+		height: 150px;
+	}
+
+	section:nth-child(2) > hero > div {
+		margin-bottom: 5px;
+	}
+
+	.slider-controls > .slider-control {
+		transform: scale(0.5);
+		-webkit-transform: scale(0.5);
+		-moz-transform: scale(0.5);
+		-ms-transform: scale(0.5);
+		-o-transform: scale(0.5);
 	}
 }
