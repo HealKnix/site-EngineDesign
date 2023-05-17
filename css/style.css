@@ -375,3 +375,15 @@ section:nth-child(2) > hero > div > .bt_feedback:hover {
 		font-size: calc(var(--index) * 1.2);
 	}
 }
+
+@media (max-width: 525px) {
+	.bt_download {
+		width: 100%;
+		margin: 0 auto;
+	}
+
+	.bt_feedback {
+		width: 100%;
+		margin: 0 auto;
+	}
+}
