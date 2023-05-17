@@ -1,14 +1,14 @@
 @font-face {
 	font-family: 'Ubuntu';
-	src: url('fonts/Ubuntu-Regular.ttf');
+	src: url('../fonts/Ubuntu-Regular.ttf');
 }
 
 @font-face {
 	font-family: 'Ubuntu Light';
-	src: url('fonts/Ubuntu-Light.ttf');
+	src: url('../fonts/Ubuntu-Light.ttf');
 }
 
 @font-face {
 	font-family: 'Lilita One Rus';
-	src: url('fonts/Lilita\ One\ Russian.ttf');
+	src: url('../fonts/Lilita\ One\ Russian.ttf');
 }
