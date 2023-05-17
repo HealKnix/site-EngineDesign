@@ -1,3 +1,10 @@
+:root {
+	--black_df: #1f2022;
+	--white_df: #fafafa;
+	--black_df_hover: hsl(220, 5%, 20%);
+	--index: calc(1vw + 1vh);
+}
+
 * {
 	margin: 0;
 	padding: 0;
@@ -10,13 +17,6 @@
 
 html {
 	scroll-behavior: smooth;
-}
-
-:root {
-	--black_df: #1f2022;
-	--white_df: #fafafa;
-	--black_df_hover: hsl(220, 5%, 20%);
-	--index: calc(1vw + 1vh);
 }
 
 section {
@@ -103,8 +103,8 @@ header > ul > a > li:hover::after {
 	opacity: 1;
 }
 
-.bt_download {
-	width: 175px;
+section:nth-child(1) > header > .bt_download {
+	width: 200px;
 	height: 40px;
 	margin: auto 30px;
 	border: none;
@@ -122,7 +122,7 @@ header > ul > a > li:hover::after {
 	-ms-transition: 0.3s ease-in-out;
 	-o-transition: 0.3s ease-in-out;
 }
-.bt_download:hover {
+section:nth-child(1) > header > .bt_download:hover {
 	background-color: var(--black_df_hover);
 	cursor: pointer;
 }
@@ -186,7 +186,7 @@ section:nth-child(2) > hero {
 	display: flex;
 	flex-direction: column;
 	margin: 0 auto;
-	padding: 60px 40px;
+	padding: 30px 40px;
 	max-width: 900px;
 }
 
@@ -200,10 +200,66 @@ section:nth-child(2) > hero > .head {
 	color: var(--white_df);
 }
 
-section:nth-child(2) > hero > .tail {
+section:nth-child(2) > hero > .tail,
+section:nth-child(2) > hero > .tail > a {
 	font-size: calc(var(--index) * 0.65);
 	font-family: 'Ubuntu Light';
 	color: var(--white_df);
+}
+
+/* ========= Buttons Section 2 ========= */
+
+section:nth-child(2) > hero > div > button {
+	margin-top: 30px;
+	margin-right: 20px;
+}
+
+section:nth-child(2) > hero > div > .bt_download {
+	width: 200px;
+	height: 40px;
+	border: none;
+	font-family: 'Ubuntu';
+	color: #fafafa;
+	background-color: #5a00d2;
+	border-radius: 100px;
+	-webkit-border-radius: 100px;
+	-moz-border-radius: 100px;
+	-ms-border-radius: 100px;
+	-o-border-radius: 100px;
+	transition: 0.3s ease-in-out;
+	-webkit-transition: 0.3s ease-in-out;
+	-moz-transition: 0.3s ease-in-out;
+	-ms-transition: 0.3s ease-in-out;
+	-o-transition: 0.3s ease-in-out;
+}
+section:nth-child(2) > hero > div > .bt_download:hover {
+	background-color: #882cff;
+	cursor: pointer;
+}
+
+section:nth-child(2) > hero > div > .bt_feedback {
+	width: 200px;
+	height: 40px;
+	border: none;
+	font-family: 'Ubuntu';
+	color: #fafafa;
+	background-color: transparent;
+	border: 1px solid var(--white_df);
+	border-radius: 100px;
+	-webkit-border-radius: 100px;
+	-moz-border-radius: 100px;
+	-ms-border-radius: 100px;
+	-o-border-radius: 100px;
+	transition: 0.3s ease-in-out;
+	-webkit-transition: 0.3s ease-in-out;
+	-moz-transition: 0.3s ease-in-out;
+	-ms-transition: 0.3s ease-in-out;
+	-o-transition: 0.3s ease-in-out;
+}
+section:nth-child(2) > hero > div > .bt_feedback:hover {
+	background-color: var(--white_df);
+	color: var(--black_df);
+	cursor: pointer;
 }
 
 /* ========= Slider Section 2 ========= */
@@ -212,7 +268,7 @@ section:nth-child(2) > hero > .tail {
 	position: relative;
 	min-width: 1100px;
 	height: 400px;
-	margin: 0 auto;
+	margin: 30px auto;
 	overflow: hidden;
 }
 
