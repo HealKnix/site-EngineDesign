@@ -28,6 +28,25 @@ section {
 	overflow: hidden;
 }
 
+.bt_download {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 200px;
+	height: 40px;
+	font-family: 'Ubuntu Medium';
+	border-radius: 100px;
+	-webkit-border-radius: 100px;
+	-moz-border-radius: 100px;
+	-ms-border-radius: 100px;
+	-o-border-radius: 100px;
+	transition: 0.3s ease-in-out;
+	-webkit-transition: 0.3s ease-in-out;
+	-moz-transition: 0.3s ease-in-out;
+	-ms-transition: 0.3s ease-in-out;
+	-o-transition: 0.3s ease-in-out;
+}
+
 button {
 	width: 200px;
 	height: 40px;
@@ -219,6 +238,8 @@ section:nth-child(2) > hero > div > button {
 }
 
 section:nth-child(2) > hero > div > .bt_download {
+	margin-top: 30px;
+	margin-right: 20px;
 	border: none;
 	color: #fafafa;
 	background-color: #5a00d2;
@@ -242,6 +263,8 @@ section:nth-child(2) > hero > div > .bt_feedback:hover {
 }
 
 section:nth-child(2) > hero > div {
+	display: flex;
+	flex-direction: row;
 	margin-bottom: 35px;
 }
 
@@ -419,6 +442,7 @@ section:nth-child(2) > hero > div {
 	}
 
 	section:nth-child(2) > hero > div {
+		display: block;
 		margin-bottom: 10px;
 	}
 }
