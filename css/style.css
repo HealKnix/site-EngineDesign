@@ -78,14 +78,14 @@ button {
 	opacity: 0.5;
 }
 
-section:nth-child(1) {
+.section_1 {
 	background-color: var(--black_df);
 	background: url('../img/bg_1.svg') no-repeat;
 	background-position: bottom;
 	background-size: cover;
 }
 
-section:nth-child(2) {
+.section_2 {
 	background-color: var(--black_df);
 	background: url('../img/bg_2.svg') no-repeat;
 	background-position: top;
@@ -138,20 +138,20 @@ header > ul > a > li:hover::after {
 	opacity: 1;
 }
 
-section:nth-child(1) > header > .bt_download {
+.section_1 > header > .bt_download {
 	margin: auto 30px;
 	border: none;
 	color: #fafafa;
 	background-color: var(--black_df);
 }
-section:nth-child(1) > header > .bt_download:hover {
+.section_1 > header > .bt_download:hover {
 	background-color: var(--black_df_hover);
 	cursor: pointer;
 }
 
 /* ========= Hero Section 1 ========= */
 
-section:nth-child(1) > hero {
+.section_1 > hero {
 	position: relative;
 	display: flex;
 	flex-direction: column;
@@ -160,16 +160,16 @@ section:nth-child(1) > hero {
 	max-width: 900px;
 }
 
-section:nth-child(1) > hero > span {
+.section_1 > hero > span {
 	margin: 10px 0;
 }
 
-section:nth-child(1) > hero > .head {
+.section_1 > hero > .head {
 	font-size: calc(var(--index) * 1.5);
 	font-family: 'Lilita One Rus';
 }
 
-section:nth-child(1) > hero > .tail {
+.section_1 > hero > .tail {
 	font-size: calc(var(--index) * 0.65);
 	font-family: 'Ubuntu Light';
 }
@@ -202,7 +202,7 @@ section:nth-child(1) > hero > .tail {
 
 /* ========= Hero Section 2 ========= */
 
-section:nth-child(2) > hero {
+.section_2 > hero {
 	height: 100vh;
 	color: var(--white_df);
 	position: relative;
@@ -213,18 +213,18 @@ section:nth-child(2) > hero {
 	max-width: 900px;
 }
 
-section:nth-child(2) > hero > span {
+.section_2 > hero > span {
 	margin: 10px 0;
 }
 
-section:nth-child(2) > hero > .head {
+.section_2 > hero > .head {
 	font-size: calc(var(--index) * 1.5);
 	font-family: 'Lilita One Rus';
 	color: var(--white_df);
 }
 
-section:nth-child(2) > hero > .tail,
-section:nth-child(2) > hero > .tail > a {
+.section_2 > hero > .tail,
+.section_2 > hero > .tail > a {
 	font-size: calc(var(--index) * 0.65);
 	font-family: 'Ubuntu Light';
 	color: var(--white_df);
@@ -232,37 +232,37 @@ section:nth-child(2) > hero > .tail > a {
 
 /* ========= Buttons Section 2 ========= */
 
-section:nth-child(2) > hero > div > button {
+.section_2 > hero > div > button {
 	margin-top: 30px;
 	margin-right: 20px;
 }
 
-section:nth-child(2) > hero > div > .bt_download {
+.section_2 > hero > div > .bt_download {
 	margin-top: 30px;
 	margin-right: 20px;
 	border: none;
 	color: #fafafa;
 	background-color: #5a00d2;
 }
-section:nth-child(2) > hero > div > .bt_download:hover {
+.section_2 > hero > div > .bt_download:hover {
 	background-color: #882cff;
 	cursor: pointer;
 }
 
-section:nth-child(2) > hero > div > .bt_feedback {
+.section_2 > hero > div > .bt_feedback {
 	border: none;
 	color: #fafafa;
 	background-color: transparent;
 	border: 1px solid var(--white_df);
 }
 
-section:nth-child(2) > hero > div > .bt_feedback:hover {
+.section_2 > hero > div > .bt_feedback:hover {
 	background-color: var(--white_df);
 	color: var(--black_df);
 	cursor: pointer;
 }
 
-section:nth-child(2) > hero > div {
+.section_2 > hero > div {
 	display: flex;
 	flex-direction: row;
 	margin-bottom: 35px;
@@ -370,27 +370,27 @@ section:nth-child(2) > hero > div {
 }
 
 @media (max-width: 1000px) {
-	section:nth-child(2) > hero > .head,
-	section:nth-child(1) > hero > .head {
+	.section_2 > hero > .head,
+	.section_1 > hero > .head {
 		font-size: calc(var(--index) * 1.5);
 	}
 
-	section:nth-child(1) > hero > .tail,
-	section:nth-child(2) > hero > .tail,
-	section:nth-child(2) > hero > .tail > a {
+	.section_1 > hero > .tail,
+	.section_2 > hero > .tail,
+	.section_2 > hero > .tail > a {
 		font-size: calc(var(--index) * 0.8);
 	}
 }
 
 @media (max-width: 800px) {
-	section:nth-child(2) > hero > .head,
-	section:nth-child(1) > hero > .head {
+	.section_2 > hero > .head,
+	.section_1 > hero > .head {
 		font-size: calc(var(--index) * 2);
 	}
 
-	section:nth-child(1) > hero > .tail,
-	section:nth-child(2) > hero > .tail,
-	section:nth-child(2) > hero > .tail > a {
+	.section_1 > hero > .tail,
+	.section_2 > hero > .tail,
+	.section_2 > hero > .tail > a {
 		font-size: calc(var(--index) * 1);
 	}
 }
@@ -410,14 +410,14 @@ section:nth-child(2) > hero > div {
 		height: auto;
 	}
 
-	section:nth-child(2) > hero > .head,
-	section:nth-child(1) > hero > .head {
+	.section_2 > hero > .head,
+	.section_1 > hero > .head {
 		font-size: calc(var(--index) * 2.5);
 	}
 
-	section:nth-child(1) > hero > .tail,
-	section:nth-child(2) > hero > .tail,
-	section:nth-child(2) > hero > .tail > a {
+	.section_1 > hero > .tail,
+	.section_2 > hero > .tail,
+	.section_2 > hero > .tail > a {
 		font-size: calc(var(--index) * 1.2);
 	}
 
@@ -425,7 +425,7 @@ section:nth-child(2) > hero > div {
 		height: 250px;
 	}
 
-	section:nth-child(2) > hero > div {
+	.section_2 > hero > div {
 		margin-bottom: 25px;
 	}
 }
@@ -441,7 +441,7 @@ section:nth-child(2) > hero > div {
 		margin: 0 auto;
 	}
 
-	section:nth-child(2) > hero > div {
+	.section_2 > hero > div {
 		display: block;
 		margin-bottom: 10px;
 	}
@@ -452,7 +452,7 @@ section:nth-child(2) > hero > div {
 		height: 150px;
 	}
 
-	section:nth-child(2) > hero > div {
+	.section_2 > hero > div {
 		margin-bottom: 5px;
 	}
 
