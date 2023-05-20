@@ -327,12 +327,12 @@ header > ul > li:last-child:hover > a::after {
 	left: 0;
 	opacity: 0;
 	z-index: 10000;
-	animation: smoothSubmenu 0.1s ease-in-out both;
-	-webkit-animation: smoothSubmenu 0.1s ease-in-out both;
+	animation: smoothSubmenu 0.2s ease-in-out both;
+	-webkit-animation: smoothSubmenu 0.2s ease-in-out both;
 }
 
 @keyframes smoothSubmenu {
-	99% {
+	0% {
 		opacity: 0;
 	}
 	100% {
