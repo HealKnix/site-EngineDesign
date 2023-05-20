@@ -1,6 +1,5 @@
-let time = 10000
-
 document.addEventListener('DOMContentLoaded', function () {
+	let time = 10000
 	const slides = document.querySelectorAll('.slide')
 	const controls = document.querySelectorAll('.slider-control')
 

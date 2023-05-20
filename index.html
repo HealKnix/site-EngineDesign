@@ -8,6 +8,7 @@
 	<link rel="shortcut icon" href="img/electric-motor.ico" type="image/x-icon">
 	<link rel="stylesheet" href="css/fonts.css">
 	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/media.css">
 	<script src="js/scripts.js" defer></script>
 	<title>Engine Design</title>
 </head>
@@ -15,7 +16,7 @@
 <body>
 
 	<section class='section_1'>
-		<a name='top'></a>
+		<a name='top' style='margin: 0'></a>
 		<header>
 			<ul>
 				<a href='#Main'>
@@ -24,25 +25,28 @@
 				<a href='#Description'>
 					<li>Описание</li>
 				</a>
+				<a href='#Manual'>
+					<li>Руководство</li>
+				</a>
 				<a href='#About Us'>
 					<li>О нас</li>
 				</a>
 			</ul>
 			<a class='bt_download'
-				href="https:\\drive.google.com/uc?export=download&id=1nCqa1N1pgtjOWJExgNJ0xJfCgzKhtFMC">Скачать</a>
+				href="https:\\drive.google.com/uc?export=download&id=1kwpRcKlnI5w3eHeLXkzf1KwKiurketEg">Скачать</a>
 		</header>
 
 		<hero>
-			<span class=' head'>
+			<h1>
 				Помощь студенту <br>
 				в расчетах характеристик <br>
 				асинхронного двигателя
-			</span>
-			<span class='tail'>
+			</h1>
+			<h2>
 				На данном сайте вы сможете найти ссылку на ПО, позволяющее провести расчёты характеристик
 				асинхронного
 				двигателя в учебных целях.
-			</span>
+			</h2>
 		</hero>
 
 		<div class='section_image'>
@@ -56,54 +60,54 @@
 	</section>
 
 	<section class='section_2'>
-		<a name='Description'></a>
+		<a name='Description' style='margin: 0;'></a>
 		<hero>
-			<span class='head'>
+			<h1>
 				Описание
-			</span>
-			<span class='tail'>
+			</h1>
+			<h2>
 				Программа написана на языке python в качестве курсового проекта по предмету объектно-ориентированное
 				программирование. Приложение предназначено для облегчения расчётов студентов при проектирования
 				асинхронного двигателя.
 				<br><br>
 				Для начала работы с приложением вам нужно перейти по <a
-					href="https:\\drive.google.com/uc?export=download&id=1nCqa1N1pgtjOWJExgNJ0xJfCgzKhtFMC"
-					style='color: #882cff; text-decoration: underline' download=''>ссылке</a> и
+					href="https:\\drive.google.com/uc?export=download&id=1kwpRcKlnI5w3eHeLXkzf1KwKiurketEg"
+					style='color: #a97ae7; text-decoration: underline' download=''>ссылке</a> и
 				скачать архив. После
 				скачивания
 				разархивируйте любым удобным для вас способом архив и выберите приложение «Program.exe». Запустите
 				приложение. Далее вас встретит стартовый экран с инструкцией по использования программы.
 				<br><br>
 				Ниже будет приведена инструкция по работе программы с иллюстрациями.
-			</span>
+			</h2>
 
 			<div>
 				<a class='bt_download'
-					href="https:\\drive.google.com/uc?export=download&id=1nCqa1N1pgtjOWJExgNJ0xJfCgzKhtFMC">Скачать</a>
+					href="https:\\drive.google.com/uc?export=download&id=1kwpRcKlnI5w3eHeLXkzf1KwKiurketEg">Скачать</a>
 				<button class='bt_feedback'>Обратная связь</button>
 			</div>
 
 			<div class="slider-container">
 				<div class="slider">
 					<div class="slide">
-						<div class="slide-content">
+						<!-- <div class="slide-content">
 							<h2>Слайдер 1</h2>
 							<p>Тест слайдера 1</p>
-						</div>
+						</div> -->
 						<img src="img/1.jpg" alt="Slide 1">
 					</div>
 					<div class="slide">
-						<div class="slide-content">
+						<!-- <div class="slide-content">
 							<h2>Слайдер 2</h2>
 							<p>Тест слайдера 2</p>
-						</div>
+						</div> -->
 						<img src="img/2.jpg" alt="Slide 2">
 					</div>
 					<div class="slide">
-						<div class="slide-content">
+						<!-- <div class="slide-content">
 							<h2>Слайдер 3</h2>
 							<p>Тест слайдера 3</p>
-						</div>
+						</div> -->
 						<img src="img/3.jpg" alt="Slide 3">
 					</div>
 				</div>
@@ -116,16 +120,63 @@
 		</hero>
 	</section>
 
-	<!-- <section>
-		<a name='About Us'></a>
-		О нас
-	</section> -->
+	<section class='section_3'>
+		<hr style='max-width: 900px; width: 90%; margin: 0 auto; border: 1px solid #61646a;'>
+		<a name='Manual' style='height: 0; margin: 0;'></a>
+		<hero>
+			<h1>Руководство</h1>
+			<h2>Раскройте более полную информацию, нажав на интересующие подсказки внизу.</h2>
+
+			<div class='container'>
+				<details>
+					<summary>1. Ввод данных</summary>
+					<p>Введите данные согласно выданному варианту и нажмите "Ввести значения".</p>
+					<img src="img/manual/1.png" style='max-width: 100%; width: 400px;'>
+				</details>
+				<details>
+					<summary>2. Заполнение таблиц</summary>
+					<p>Введите полученные значения для вашего варианта в таблицу и нажмите кнопку "Проверка".</p>
+					<img src="img/manual/2.png" style='max-width: 100%; width: 800px;'>
+				</details>
+				<details>
+					<summary>3. Проверка таблиц</summary>
+					<p>При правильно введённых значениях вам откроется возможность ввода переменных для расчёта таблицы.
+					</p>
+					<img src="img/manual/3.png" style='max-width: 100%; width: 800px;'>
+				</details>
+				<details>
+					<summary>4. Ввод переменных</summary>
+					<p>После ввода переменных нажмите кнопку "Рассчитать".</p>
+					<img src="img/manual/4.png" style='max-width: 100%; width: 800px;'>
+				</details>
+				<details>
+					<summary>5. Расчёт таблицы</summary>
+					<p>После нажатия кнопки "Рассчитать" происходит расчёт всей таблицы.</p>
+					<img src="img/manual/5.png" style='max-width: 100%; width: 800px;'>
+				</details>
+				<details>
+					<summary>6. Графики</summary>
+					<p>После нажатия кнопки "Графики" выскакивает окно с графиками.</p>
+					<img src="img/manual/6.png" style='max-width: 100%; width: 800px;'>
+				</details>
+				<details>
+					<summary>7. Дальнейший расчёт</summary>
+					<p>Расчёт последующих таблиц аналогичен.</p>
+					<p>В случае возникновения трудностей при подсчёте, перейти во вкладку "Настройки" и увеличьте
+						значение погрешности.</p>
+					<img src="img/manual/7.png" style='max-width: 100%; width: 400px;'>
+				</details>
+			</div>
+		</hero>
+	</section>
+
+	<footer>
+		<span>2023 (с) — All rights reserved</span>
+	</footer>
 
 	<a href="#top">
 		<div class='back_up'></div>
 	</a>
-
-	<div class='cursor'></div>
 
 </body>
 
