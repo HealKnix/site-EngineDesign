@@ -24,21 +24,18 @@
 	}
 }
 
-@media (max-width: 600px) {
-	header > ul > a > li {
+@media (max-width: 778px) {
+	header > ul > li {
 		position: relative;
 		height: auto;
-		float: left;
+		float: none;
 		display: flex;
 		align-items: center;
-		padding: 5px 0;
 		margin: 5px 20px;
 	}
+}
 
-	header {
-		height: auto;
-	}
-
+@media (max-width: 600px) {
 	hero > h1,
 	hero > h1 {
 		font-size: calc(var(--index) * 2.5);
